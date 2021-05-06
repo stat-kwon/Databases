@@ -42,6 +42,7 @@ sql = "INSERT INTO user_info (USER_EMAIL, BLOG_ID) VALUES ('%s', '%s')" % (str(u
 seol_db.execute(sql)
 db_conn.commit()
 
+# 6. 데이터 살펴보기
 sql = "SELECT * FROM user_info"
 seol_db.execute(sql)
 results = seol_db.fetchall()
